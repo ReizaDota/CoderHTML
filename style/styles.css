@@ -266,7 +266,7 @@ padding: 5px;
 
 /* CSS Texto animado de contact */
 .moving-text {
-    animation: slidein 3s ease-in-out infinite alternate;
+    animation: slidein 3s ease-in-out infinite;
     background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
     background-clip: text;
     -webkit-background-clip: text;
@@ -274,16 +274,20 @@ padding: 5px;
     text-emphasis-color: transparent;
     text-align: left;
     white-space: nowrap;
-    background-size: 600% auto; 
+    background-size: 500% auto;
     background-position: 0% center;
 }
 
 @keyframes slidein {
-    from {
+    0% {
     margin-left: -100%;
+    animation-timing-function: ease-in;
     }
-
-    to {
+    50% {
+    animation-timing-function: ease-out;
+    }
+    100% {
     margin-left: 100%;
+    animation-timing-function: ease-in;
     }
 }
