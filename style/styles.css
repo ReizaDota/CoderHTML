@@ -207,9 +207,9 @@ p{
         flex-direction: column;
     }
     h1{
-        font-size: 60px;    
-        line-height: 40px;
-        letter-spacing: 10px;
+        font-size: 40px;    
+        line-height: 30px;
+        letter-spacing: 5px;
     }
 }
 
