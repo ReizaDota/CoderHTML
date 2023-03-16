@@ -33,8 +33,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 576px) {
-    a {
+@media (max-width: 576px){
+    a{
     margin-right: 0.5rem;
     }
 }
@@ -204,13 +204,13 @@ p{
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 768px) {
-    .gallery1, .gallery2, .gallery3, .gallery4 {
+@media screen and (min-width: 768px){
+    .gallery1, .gallery2, .gallery3, .gallery4{
         max-width: 100%;
     }
 }
-@media screen and (max-width: 767px) {
-    .gallery-img-container {
+@media screen and (max-width: 767px){
+    .gallery-img-container{
         display: flex;
         flex-direction: column;
     }
@@ -271,7 +271,7 @@ padding: 5px;
 }
 
 /* CSS Texto animado de contact */
-.moving-text {
+.moving-text{
     animation: slidein 3s ease-in-out infinite;
     background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
     background-clip: text;
@@ -284,16 +284,16 @@ padding: 5px;
     background-position: 0% center;
 }
 
-@keyframes slidein {
-    0% {
+@keyframes slidein{
+    0%{
     margin-left: -100%;
     animation-timing-function: ease-in;
     }
-    50% {
+    50%{
     animation-timing-function: ease-out;
     animation-duration: 5s;
     }
-    100% {
+    100%{
     margin-left: 100%;
     animation-timing-function: ease-in;
     }
