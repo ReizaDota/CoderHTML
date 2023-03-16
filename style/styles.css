@@ -183,7 +183,16 @@ p{
 .gallery1, .gallery2, .gallery3, .gallery4:hover{   
     cursor:zoom-in;
 }
-.gallery1, .gallery2, .gallery3, .gallery4:active{   
+.gallery1:active{   
+    transform: scale(1.2);
+}
+.gallery2:active{   
+    transform: scale(1.2);
+}
+.gallery3:active{   
+    transform: scale(1.2);
+}
+.gallery4:active{   
     transform: scale(1.2);
 }
 
