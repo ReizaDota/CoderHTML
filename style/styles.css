@@ -267,6 +267,7 @@ padding: 5px;
     -webkit-text-fill-color: transparent;
     text-emphasis-color: transparent;
     text-align: left;
+    white-space: nowrap;
     background-size: 600% auto; 
     background-position: 0% center;
 }
