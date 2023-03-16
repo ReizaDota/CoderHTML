@@ -259,3 +259,24 @@ padding: 5px;
     padding: 10px;
     text-align: center;
 }
+.moving-text {
+    animation: slidein 3s ease-in-out infinite alternate;
+    background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+    text-align: left;
+    background-size: 200% auto; 
+    background-position: 0% center;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 0%;
+    }
+
+    to {
+    margin-left: 100%;
+    }
+}
