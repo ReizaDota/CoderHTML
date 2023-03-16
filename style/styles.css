@@ -171,10 +171,10 @@ p{
     grid-row: 2;
 }
 .gallery1, .gallery3{
-    justify-self: right;
+    justify-self: end;
 }
 .gallery2, .gallery4{
-    justify-self: left;
+    justify-self: start;
 }
 .gallery1, .gallery2, .gallery3, .gallery4{
     height: auto;
