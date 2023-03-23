@@ -224,10 +224,14 @@ p{
 /* CSS Contact form y submit */
 .contact-form{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 414px){
+    .contact-form {
+    flex-direction: column;
+    }
 }
 input{
 padding: 5px;
