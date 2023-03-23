@@ -258,7 +258,7 @@ padding: 5px;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    width: 50%;
+    max-width: 50%;
     overflow: hidden;
     margin: 0 auto;
 }
