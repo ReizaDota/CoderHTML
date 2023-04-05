@@ -1,0 +1,30 @@
+/* Colour Palette
+--azure-web: #CBDEDEff;
+--khaki: #C7B499ff;
+--black-bean: #361218ff;*/
+
+/* Intenté dejar todo ordenado por categorías */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CBDEDEff;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{    
+    height: auto;
+}
+
+main{
+    height: auto;
+    margin: auto;
+}

@@ -1,0 +1,30 @@
+/* CSS Contact form y submit */
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 414px){
+    .contact-form {
+    flex-direction: column;
+    }
+}
+input{
+padding: 5px;
+}
+.submit-button{
+    background-color: #C7B499ff;
+    color: #361218ff;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.submit-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.submit-button:active{
+    background-color: #361218ff;
+    color: #C7B499ff;
+    transform: translateY(4px);
+}
