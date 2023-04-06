@@ -2,7 +2,7 @@
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     
@@ -16,15 +16,18 @@
         cursor: pointer;
     }
     }
-    
-    @media (max-width: 736px) {
-    a {
-        margin-right: 0.5rem;
-    }
-    }
 }
 
 .container-navbar {
     background-color: #CBDEDEff;
     @include navbar;
+
+    @media (max-width: 736px) {
+    flex-direction: column;
+    
+    a {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    }
 }

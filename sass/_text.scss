@@ -43,13 +43,17 @@ $p-footer-color: #361218ff;
 .footer-logos {    
     padding: 10px;
     text-align: center;
-
-    .p-footer {
+    width: 100%;
+}
+.p-footer {
+        display: inline-block;
+        vertical-align: middle;
         font-size: $p-footer-size;
         color: $p-footer-color;
         text-align: center;
-    }
+        width: 100%;
 }
+
 
 @media (max-width: 736px) {
     p {

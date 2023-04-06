@@ -106,11 +106,16 @@ main p, main .historyp, main .servicesp {
 .footer-logos {
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
-.footer-logos .p-footer {
+
+.p-footer {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 15px;
   color: #361218;
   text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 736px) {
@@ -169,7 +174,7 @@ main p, main .historyp, main .servicesp {
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -183,8 +188,12 @@ main p, main .historyp, main .servicesp {
   cursor: pointer;
 }
 @media (max-width: 736px) {
+  .container-navbar {
+    flex-direction: column;
+  }
   .container-navbar a {
-    margin-right: 0.5rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -220,6 +229,14 @@ main p, main .historyp, main .servicesp {
   padding: 30px;
 }
 
+@media (max-width: 736px) {
+  .services-img {
+    width: 100%;
+  }
+  .contact-img {
+    width: 80%;
+  }
+}
 /* CSS Galería de imágenes */
 .gallery-img-container {
   padding: 15px;

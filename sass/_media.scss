@@ -10,8 +10,8 @@
     align-items: center;
 
     .index-img {
-    @include img-style;
-    width: 80%;
+        @include img-style;
+        width: 80%;
     }
 }
 
@@ -25,10 +25,20 @@
     width: 50%;
 }
 
-.contact-img{
+.contact-img {
     width: 50%;
     height: auto;
     padding: 30px;
+}
+
+@media (max-width: 736px) {
+    .services-img {
+        width: 100%;
+    }
+
+    .contact-img {
+        width: 80%;
+    }
 }
 
 /* CSS Galería de imágenes */
