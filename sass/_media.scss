@@ -1,7 +1,7 @@
 @mixin img-style {
     width: 100%;
     height: auto;
-    padding: 30px;
+    object-fit: cover;
 }
 
 .img-container {
@@ -10,35 +10,22 @@
     align-items: center;
 
     .index-img {
-        @include img-style;
-        width: 80%;
+    @include img-style;
+    width: 90%;
+    max-width: 100%;
+    max-height: 100%;
     }
 }
 
-.services-img {
+.services-img, .index-img, .contact-img {
     @include img-style;
-    width: 60%;
+    width: 90%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .contact-img {
-    @include img-style;
     width: 50%;
-}
-
-.contact-img {
-    width: 50%;
-    height: auto;
-    padding: 30px;
-}
-
-@media (max-width: 736px) {
-    .services-img {
-        width: 100%;
-    }
-
-    .contact-img {
-        width: 80%;
-    }
 }
 
 /* CSS Galería de imágenes */
@@ -81,7 +68,7 @@
     }
     }
 
-    @media screen and (min-width: 737px) {
+    @media screen and (min-width: 413px) {
     .gallery1, .gallery2, .gallery3, .gallery4 {
         max-width: 100%;
     }
@@ -92,7 +79,7 @@
     @include gallery-img;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 414px) {
     .gallery-img-container {
     display: flex;
     flex-direction: column;

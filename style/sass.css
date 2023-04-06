@@ -65,7 +65,7 @@ h2 {
   letter-spacing: 2px;
   padding: 15px;
 }
-@media (max-width: 736px) {
+@media (max-width: 414px) {
   h2 {
     font-size: 20px;
     line-height: 25px;
@@ -118,7 +118,7 @@ main p, main .historyp, main .servicesp {
   width: 100%;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 414px) {
   p, .servicesp, .historyp {
     font-size: 18px;
     line-height: 28px;
@@ -187,7 +187,7 @@ main p, main .historyp, main .servicesp {
   color: rosybrown;
   cursor: pointer;
 }
-@media (max-width: 736px) {
+@media (max-width: 414px) {
   .container-navbar {
     flex-direction: column;
   }
@@ -205,38 +205,27 @@ main p, main .historyp, main .servicesp {
 .img-container .index-img {
   width: 100%;
   height: auto;
-  padding: 30px;
-  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.services-img {
+.services-img, .index-img, .contact-img {
   width: 100%;
   height: auto;
-  padding: 30px;
-  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contact-img {
-  width: 100%;
-  height: auto;
-  padding: 30px;
   width: 50%;
 }
 
-.contact-img {
-  width: 50%;
-  height: auto;
-  padding: 30px;
-}
-
-@media (max-width: 736px) {
-  .services-img {
-    width: 100%;
-  }
-  .contact-img {
-    width: 80%;
-  }
-}
 /* CSS Galería de imágenes */
 .gallery-img-container {
   padding: 15px;
@@ -270,13 +259,13 @@ main p, main .historyp, main .servicesp {
 .gallery-img-container .gallery1:active, .gallery-img-container .gallery2:active, .gallery-img-container .gallery3:active, .gallery-img-container .gallery4:active {
   transform: scale(1.2);
 }
-@media screen and (min-width: 737px) {
+@media screen and (min-width: 413px) {
   .gallery-img-container .gallery1, .gallery-img-container .gallery2, .gallery-img-container .gallery3, .gallery-img-container .gallery4 {
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 414px) {
   .gallery-img-container {
     display: flex;
     flex-direction: column;
@@ -307,7 +296,7 @@ main p, main .historyp, main .servicesp {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 736px) {
+@media (max-width: 414px) {
   .contact-form {
     flex-direction: column;
   }
