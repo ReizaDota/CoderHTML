@@ -1,9 +1,17 @@
+$h1-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$h2-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 h1, h2{
     color: #361218ff;
     text-align: center;
+
+    &.h2history{
+        margin-top: 20px;
+    }
 }
+
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $h1-font;
     font-weight: bolder;
     font-size: 70px;    
     line-height: 50px;
@@ -15,20 +23,10 @@ h1{
 }
 
 h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $h2-font;
     font-weight: 300;
     font-size: 30px;    
     line-height: 30px;
     letter-spacing: 2px;
     padding: 15px;
-}
-
-.h2history{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300;
-    font-size: 30px;    
-    line-height: 30px;
-    letter-spacing: 2px;
-    padding: 15px;
-    margin-top: 20px;
 }

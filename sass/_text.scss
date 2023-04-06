@@ -1,42 +1,38 @@
-p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 20px;    
-    line-height: 30px;
-    letter-spacing: 2px;
-    text-align: justify;
-    color: rgb(107, 84, 53);
-    height: auto;
-}
-main p{
+$p-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$p-weight: 500;
+$p-size: 20px;    
+$p-line-height: 30px;
+$p-letter-spacing: 2px;
+$p-color: rgb(107, 84, 53);
+
+p {
+font-family: $p-font;
+font-weight: $p-weight;
+font-size: $p-size;
+line-height: $p-line-height;
+letter-spacing: $p-letter-spacing;
+text-align: justify;
+color: $p-color;
+height: auto;
+
+main & {
     text-align: center;
 }
-
-
-
-.servicesp{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 20px;    
-    line-height: 30px;
-    letter-spacing: 2px;
-    color: rgb(107, 84, 53);
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
 }
 
-.historyp{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 20px;    
-    line-height: 30px;
-    letter-spacing: 2px;
-    color: rgb(107, 84, 53);
-    margin-top: 20px;
-    margin-right: 8%;
-    margin-left: 8%;
-    margin-bottom: 20px;
-    text-align: center;
+.servicesp {
+@extend p;
+padding: 10px;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+}
+
+.historyp {
+@extend p;
+margin-top: 20px;
+margin-right: 8%;
+margin-left: 8%;
+margin-bottom: 20px;
+text-align: center;
 }

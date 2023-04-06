@@ -1,24 +1,30 @@
-.container-navbar{
-    background-color: #CBDEDEff;
+@mixin navbar {
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-@media (max-width: 576px){
-    a{
-    margin-right: 0.5rem;
+    
+    a {
+    text-decoration: none;
+    color: rgb(107, 84, 53) !important;
+    font-size: 20px;
+    
+    &:hover {
+        color: rosybrown;
+        cursor: pointer;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    a {
+        margin-right: 0.5rem;
+    }
     }
 }
 
-a{    
-    text-decoration: none;
-    color: rgb(107, 84, 53) !important;    
-    font-size: 20px;
-}
-a:hover{
-    color: rosybrown;
-    cursor: pointer;
+.container-navbar {
+    background-color: #CBDEDEff;
+    @include navbar;
 }

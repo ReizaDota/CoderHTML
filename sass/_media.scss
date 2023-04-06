@@ -1,19 +1,28 @@
-.img-container{
+@mixin img-style {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.index-img{
+    .index-img {
+    @include img-style;
     width: 80%;
-    height: auto;
-    padding: 30px;
+    }
 }
 
-.services-img{
+.services-img {
+    @include img-style;
     width: 60%;
-    height: auto;
-    padding: 30px;
+}
+
+.contact-img {
+    @include img-style;
+    width: 50%;
 }
 
 .contact-img{
@@ -23,7 +32,7 @@
 }
 
 /* CSS Galería de imágenes */
-.gallery-img-container{
+@mixin gallery-img {
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,55 +41,54 @@
     align-content: center;
     justify-content: center;
     width: 100%;
-}
-.gallery1, .gallery2{
-    grid-row: 1;
-}
-.gallery3, .gallery4{
-    grid-row: 2;
-}
-.gallery1, .gallery3{
-    justify-self: end;
-}
-.gallery2, .gallery4{
-    justify-self: start;
-}
-.gallery1, .gallery2, .gallery3, .gallery4{
-    height: auto;
-    transition: all 0.3s ease-in-out
-}
-.gallery1, .gallery2, .gallery3, .gallery4:hover{   
-    cursor:zoom-in;
-}
-.gallery1:active{   
-    transform: scale(1.2);
-}
-.gallery2:active{   
-    transform: scale(1.2);
-}
-.gallery3:active{   
-    transform: scale(1.2);
-}
-.gallery4:active{   
-    transform: scale(1.2);
-}
 
-@media screen and (min-width: 768px){
-    .gallery1, .gallery2, .gallery3, .gallery4{
+    .gallery1, .gallery2 {
+    grid-row: 1;
+    }
+
+    .gallery3, .gallery4 {
+    grid-row: 2;
+    }
+
+    .gallery1, .gallery3 {
+    justify-self: end;
+    }
+
+    .gallery2, .gallery4 {
+    justify-self: start;
+    }
+
+    .gallery1, .gallery2, .gallery3, .gallery4 {
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        cursor: zoom-in;
+    }
+    
+    &:active {
+        transform: scale(1.2);
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+    .gallery1, .gallery2, .gallery3, .gallery4 {
         max-width: 100%;
     }
-}
-@media screen and (max-width: 767px){
-    .gallery-img-container{
-        display: flex;
-        flex-direction: column;
-    }
-    h1{
-        font-size: 40px;    
-        line-height: 30px;
-        letter-spacing: 5px;
     }
 }
+
+.gallery-img-container {
+    @include gallery-img;
+}
+
+@media screen and (max-width: 767px) {
+    .gallery-img-container {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
 /* CSS Youtube */
 .video-container{
     display: flex;
