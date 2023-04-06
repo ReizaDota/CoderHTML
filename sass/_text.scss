@@ -6,33 +6,75 @@ $p-letter-spacing: 2px;
 $p-color: rgb(107, 84, 53);
 
 p {
-font-family: $p-font;
-font-weight: $p-weight;
-font-size: $p-size;
-line-height: $p-line-height;
-letter-spacing: $p-letter-spacing;
-text-align: justify;
-color: $p-color;
-height: auto;
+    font-family: $p-font;
+    font-weight: $p-weight;
+    font-size: $p-size;
+    line-height: $p-line-height;
+    letter-spacing: $p-letter-spacing;
+    text-align: justify;
+    color: $p-color;
+    height: auto;
 
-main & {
-    text-align: center;
-}
+    main & {
+        text-align: center;
+    }
 }
 
 .servicesp {
-@extend p;
-padding: 10px;
-margin-left: 10px;
-margin-right: 10px;
-text-align: center;
+    @extend p;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .historyp {
-@extend p;
-margin-top: 20px;
-margin-right: 8%;
-margin-left: 8%;
-margin-bottom: 20px;
-text-align: center;
+    @extend p;
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+$p-footer-size: 15px;
+$p-footer-color: #361218ff;
+
+.footer-logos {    
+    padding: 10px;
+    text-align: center;
+
+    .p-footer {
+        font-size: $p-footer-size;
+        color: $p-footer-color;
+        text-align: center;
+    }
+}
+
+@media (max-width: 736px) {
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .servicesp {
+        font-size: 16px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .historyp {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .footer-logos {
+        .p-footer {
+            font-size: 14px;
+        }
+    }
 }

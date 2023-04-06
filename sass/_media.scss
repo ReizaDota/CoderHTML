@@ -71,7 +71,7 @@
     }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 737px) {
     .gallery1, .gallery2, .gallery3, .gallery4 {
         max-width: 100%;
     }
@@ -82,7 +82,7 @@
     @include gallery-img;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 736px) {
     .gallery-img-container {
     display: flex;
     flex-direction: column;
