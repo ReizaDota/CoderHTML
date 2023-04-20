@@ -55,10 +55,10 @@ $p-footer-color: #361218ff;
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .servicesp {
@@ -70,6 +70,34 @@ $p-footer-color: #361218ff;
 
     .historyp {
         font-size: 16px;
+        margin-top: 10px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .footer-logos {
+        .p-footer {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .servicesp {
+        font-size: 14px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .historyp {
+        font-size: 14px;
         margin-top: 10px;
         margin-right: 5%;
         margin-left: 5%;

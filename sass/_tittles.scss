@@ -10,37 +10,51 @@ h1, h2{
     }
 }
 
-h1{
+h1 {
     font-family: $h1-font;
     font-weight: bolder;
-    font-size: 70px;    
+    font-size: 70px;
     line-height: 50px;
     letter-spacing: 10px;
     text-transform: capitalize;
     padding: 20px;
     width: 100%;
     z-index: 999;
-
-    @media (max-width: 736px) {
-        font-size: 50px;
-        line-height: 40px;
-        letter-spacing: 6px;
-        padding: 10px;
+    
+    @media (max-width: 768px) {
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    padding: 10px;
+    }
+    
+    @media (max-width: 414px) {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 5px;
     }
 }
 
-h2{
+h2 {
     font-family: $h2-font;
     font-weight: 300;
-    font-size: 30px;    
+    font-size: 30px;
     line-height: 30px;
     letter-spacing: 2px;
     padding: 15px;
-
+    
+    @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+    }
+    
     @media (max-width: 414px) {
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 1px;
-        padding: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 5px;
     }
 }
